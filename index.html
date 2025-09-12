@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nuestra Boda</title>
-  <style>
+ <style>
     body {
       margin: 0;
       padding: 0;
-      background: #fff; /* fondo negro para resaltar fotos */
+      background: #000;
     }
 
     .gallery {
@@ -17,19 +17,42 @@
     }
 
     .gallery img {
-      width: 100%;     /* ocupa todo el ancho */
-      height: auto;    /* mantiene proporción */
-      display: block;  /* elimina espacios raros */
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Por defecto (pantallas grandes) */
+    .mobile {
+      display: none;
+    }
+
+    /* Cuando la pantalla es md o más pequeña (ej: <768px) */
+    @media (max-width: 768px) {
+      .desktop {
+        display: none;
+      }
+      .mobile {
+        display: block;
+      }
     }
   </style>
 </head>
 <body>
   <main class="gallery">
-    <!-- Aquí pegas tus imágenes -->
-    <img src="img1boda.jpg" alt="Foto 1">
-    <img src="img2boda.jpg" alt="Foto 2">
-    <img src="img3boda.jpg" alt="Foto 3">
-    <!-- agrega más imágenes si quieres -->
+    <!-- Imágenes para PC / Tablet -->
+    <div class="desktop">
+      <img src="img1boda.jpg" alt="Imagen Desktop 1">
+      <img src="img2boda.jpg" alt="Imagen Desktop 2">
+      <img src="img3boda.jpg" alt="Imagen Desktop 3">
+    </div>
+
+    <!-- Imágenes para Celulares -->
+    <div class="mobile">
+      <img src="img1bodamobil.jpg" alt="Imagen Mobile 1">
+      <img src="img2bodamobil.jpg" alt="Imagen Mobile 2">
+      <img src="img3bodamobil.jpg" alt="Imagen Mobile 3">
+    </div>
   </main>
 </body>
 </html>
