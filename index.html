@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nuestra Boda</title>
- <style>
+  <style>
     body {
       margin: 0;
       padding: 0;
@@ -22,7 +22,7 @@
       display: block;
     }
 
-    /* Bloque del botón dentro de la galería */
+    /* Bloques de botones */
     .gallery .button-container {
       display: flex;
       justify-content: center;
@@ -42,13 +42,13 @@
     .gallery .button-container a:hover {
       background-color: #45a049;
     }
-   
+
     /* Por defecto (pantallas grandes) */
     .mobile {
       display: none;
     }
 
-    /* Cuando la pantalla es md o más pequeña (ej: <768px) */
+    /* Para pantallas menores a 768px */
     @media (max-width: 768px) {
       .desktop {
         display: none;
@@ -75,21 +75,34 @@
       <img src="img3bodamobil.jpg" alt="Imagen Mobile 3">
     </div>
 
+    <!-- Botón de Google Maps -->
     <div class="button-container">
       <a href="https://maps.app.goo.gl/7QAUcb3ogCLYNk6B9" target="_blank">
         Ver en Google Maps
       </a>
     </div>
 
+    <!-- Más imágenes -->
     <div class="desktop">
       <img src="img4boda.jpg" alt="Imagen Desktop 4">
       <img src="img5boda.jpg" alt="Imagen Desktop 5">
+      <!-- Nueva imagen Desktop -->
+      <img src="img6boda.jpg" alt="Imagen Desktop 6">
     </div>
     <div class="mobile">
       <img src="img4bodamobil.jpg" alt="Imagen Mobile 4">
       <img src="img5bodamobil.jpg" alt="Imagen Mobile 5">
+      <!-- Nueva imagen Mobile -->
+      <img src="img6bodamobil.jpg" alt="Imagen Mobile 6">
     </div>
-    
+
+    <!-- Botón de WhatsApp -->
+    <div class="button-container">
+      <a href="https://wa.me/51975838646?text=Hola,%20quisiera%20confirmar%20mi%20asistencia%20a%20la%20boda."
+         target="_blank">
+        Enviar WhatsApp
+      </a>
+    </div>
   </main>
 </body>
 </html>
